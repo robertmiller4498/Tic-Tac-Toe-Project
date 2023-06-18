@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    gap: 2em 2em;
+    background-color: #d1d5db;
+}
+
+/* Header */
+/* Come back to style with page. */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    height: fit-content;
+    width: auto;
+    border: 4px solid #082f49;
+    border-radius: 10%;
+    background-color: #0e7490;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 0.5em;
+    color: #e0f2fe;
+}
+
+/* Weapon Selection */
+.weapon-selection-container {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+     grid-template-areas: 
+    ". title ."
+    "li-box li-box li-box";
+    justify-items: center;
+}
+
+.header2-container {
+    justify-self: center;
+    grid-area: title;
+    color: #082f49;
+}
+.selection-box {
+    justify-content: space-between;
+    align-self: center;
+    list-style-type: none;
+    grid-area: li-box;
+    padding: 0;
+    
+}
+
+.selection-box li {
+    display: inline;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #082f49;
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+    color: #e0f2fe;
+    background-color: #0e7490;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* .rock {
+    grid-area: rockselect;
+    border: 2px solid black;
+}
+
+.paper {
+    grid-area: paperselect;
+    border: 2px solid black;
+}
+
+.scissors {
+    grid-area: scissorsselect;
+    border: 2px solid black;
+} */
+
+/* Gameboard */
+.game-board { 
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+   }
+
+.box {
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
+
